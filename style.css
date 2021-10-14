@@ -11,6 +11,29 @@ body {
   padding: auto;
 }
 
+#menu {
+  flex-direction: row;
+  padding: 2% 0;
+  justify-content : space-around;
+  text-align: center;
+  margin-top: 0;
+  border-radius: 0 0 10px 10px;
+}
+
+.menu-btn {
+  font-size: 25px;
+  width: 250px;
+  }
+
+.menu-btn a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-btn a:visited {
+  color: black;
+}
+
 .container {
   display: flex;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -25,7 +48,9 @@ body {
 
 .container h1 {
   font-size: 80px;
+  text-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
 }
+
 
 .card-white {
   display: flex;
@@ -52,6 +77,8 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
   transition-delay: 0.1s;
   transition-duration: 0.5s ;
+  transform: scale(1.2);
+
 }
 
 .card-white a {
@@ -75,10 +102,14 @@ body {
 }
 
 .card-white button:hover{
-  color: white;
+  color: blue;
   background-color: darkgreen;
   transition-delay: 0.1s;
   transition-duration: 0.3s;
+}
+
+.card-white a:hover {
+  color: white;
 }
 
 .card-white button:visited {
